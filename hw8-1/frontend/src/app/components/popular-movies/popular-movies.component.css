@@ -1,0 +1,22 @@
+h2 {
+    color: white;
+    margin-left: 8%;
+}
+
+.popular-movies-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    height: 30%;
+}
+
+.card {
+    border: 0.5px solid #000033;
+}
+
+ngb-carousel {
+    outline: none;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 100%;
+}

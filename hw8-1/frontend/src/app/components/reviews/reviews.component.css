@@ -1,0 +1,123 @@
+a {
+    text-decoration: underline !important;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    display: block;
+    box-sizing: border-box;
+    padding: 5%;
+    height: 12.5vh;
+    width: 30%;
+    margin-left: 15%;
+}
+
+.card {
+    border: none !important;
+    position: relative;
+}
+
+.card-body {
+    padding-left: 1% !important;
+    padding-right: 1% !important;
+    padding-top: 2% !important;
+}
+
+#castHeading {
+    color: white;
+    font: 500 36px 'Lato', sans-serif !important;
+    margin-left: 8% !important;
+    margin-bottom: -2% !important;
+}
+
+#count {
+    color: rgba(175, 167, 167, 0.658);
+    ;
+    font: 700 36px 'Lato', sans-serif !important;
+    margin-left: 1% !important;
+}
+
+.reviews {
+    margin-bottom: 3%;
+    border-radius: 10px !important;
+}
+
+.reviewText {
+    margin-left: 2%;
+    margin-top: 2%;
+    max-width: 100% !important;
+    flex-wrap: wrap;
+    align-items: baseline;
+    flex: 0 0 83% !important;
+}
+
+.topRev {
+    width: fit-content;
+    float: left;
+}
+
+.rText {
+    font: 400 22px/10px 'Lato', sans-serif !important;
+    color: black !important;
+    display: inline-block;
+}
+
+.round-rating {
+    width: 20%;
+    float: left;
+    margin-top: -1%;
+    margin-left: 1%;
+}
+
+.reviewRate {
+    background-color: black;
+    border-radius: 300px;
+    color: #fff;
+    padding: 7% 10% 7% 10%;
+    margin-left: 10%;
+}
+
+.info {
+    width: 100%;
+    margin-top: 5%;
+    float: left;
+}
+
+.userInfo {
+    font: 400 15px/10px 'Lato', sans-serif !important;
+    color: rgba(78, 77, 77, 0.658);
+    margin-bottom: 4% !important;
+}
+
+.ellipsis {
+    font: 400 15px 'Lato', sans-serif !important;
+    text-align: justify;
+    overflow: hidden;
+    position: relative;
+    line-height: 1.2em;
+    max-height: 3.6em;
+    padding-right: 1em;
+    color: rgba(5, 5, 5, 0.795);
+    margin-bottom: 2% !important;
+}
+
+.ellipsis:before {
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.ellipsis:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: #fdfdfc;
+}
+
+.readText {
+    font: 400 15px/10px 'Lato', sans-serif !important;
+}

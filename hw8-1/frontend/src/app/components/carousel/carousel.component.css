@@ -1,0 +1,27 @@
+.caro-container {
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 30%;
+}
+
+img {
+    width: 100%;
+}
+
+.picsum-img-wrapper {
+    height: 45vh;
+}
+
+ngb-carousel {
+    outline: none;
+    transition: transform .2s;
+}
+
+ngb-carousel:hover {
+    transform: scale(1.05);
+}
+
+.carousel-caption {
+    text-align: left;
+    font-size: 18px;
+}
