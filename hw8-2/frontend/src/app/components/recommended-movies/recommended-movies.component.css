@@ -1,0 +1,26 @@
+h1 {
+    color: white;
+    margin-left: 8%;
+}
+
+.container1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    height: 30%;
+}
+
+.card {
+    border: none;
+}
+
+.carousel-caption {
+    margin-bottom: -30%;
+}
+
+ngb-carousel {
+    outline: none;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 100%;
+}

@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col-s-2">
+            <youtube-player videoId={{videoId}} [width]="600" [height]="350"></youtube-player>
+        </div>
+        <div class="col-s-2" style=" margin-left: 3%; color: rgba(255, 255, 255, 0.719); line-height: 1.2;">
+            <h1>{{title}}</h1>
+            <p>{{tagline}}</p>
+            <p>{{release_date}} &nbsp;|&nbsp; &#9733; {{vote_average}} &nbsp;|&nbsp; {{runtime}}</p>
+            <p style="width: 70%;"> <b>Genres :</b> {{genres}}</p>
+            <p> <b>Spoken Languages : </b>{{spoken}} </p>
+            <button type="button" class="btn btn-primary watchButton" (click)="watchList(category, id)">{{buttonState}}</button>
+            <ngb-alert #selfClosingAlert *ngIf="successMessage" [type]="alertType" (closed)="successMessage = ''">{{ successMessage }}</ngb-alert>
+        </div>
+    </div>
+    <div style="margin-top: 1%;">
+        <h5>Description</h5>
+        <p style="color: rgba(255, 255, 255, 0.651); width: 90%;">{{desc}}</p>
+    </div>
+    <div style="margin-top: 1%;">
+        <h5>Share</h5>
+        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text={{tweet}}" target="_blank">
+            <i class="fa fa-twitter twee"></i>
+        </a>
+        <a href="{{face}}" target="_blank">
+            <i class="fa fa-facebook-square face"></i>
+        </a>
+    </div>
+    <br>
+    <!-- <h5>Add details here</h5> -->
+    <app-full-cast-crew></app-full-cast-crew><br>
+    <app-reviews></app-reviews><br>
+    <app-recommended-movies></app-recommended-movies><br>
+    <app-similar-movies></app-similar-movies><br>   
+</div>
