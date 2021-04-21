@@ -52,7 +52,7 @@ export class SearchOptionComponent {
       if (term === '') {
         return of([]);
       }
-      return this.httpClient.get<string []>("http://localhost:8080/apis571/search_multi/"+term)
+      return this.httpClient.get<string []>("https://myprojectfinal-310305.wl.r.appspot.com/apis571/search_multi/"+term)
       .pipe(
         map((response) => {
           //console.log(response);

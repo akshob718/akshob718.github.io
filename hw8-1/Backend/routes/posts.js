@@ -36,20 +36,6 @@ router.get('/trending', function(req, res) {
 //     })
 // });
 
-// router.get('/trending', function(req, res, next) {
-//     let carousel = []
-//     const url1 = 'https://api.themoviedb.org/3/movie/now_playing?api_key=0ba6a440f1ad1b9a193be201a90612d3&language=en-US&page=1'
-//     axios.get(url1).then(data => {
-//         for (var i = 0; i < Math.min(data.data.results.length, 5); i++) {
-//             carousel.push({ "id": data.data.results[i]["id"], "title": data.data.results[i]["title"], "poster_path": data.data.results[i]["backdrop_path"] })
-//         }
-//         console.log(carousel);
-//         res.json(carousel)
-//     }).catch(err => {
-//         res.send(err)
-//     });
-// });
-
 router.get('/popularmovies', function(req, res) {
     let popular_movies = []
     const url2 = 'https://api.themoviedb.org/3/movie/popular?api_key='+api_key+"&language=en-US&page=1"
