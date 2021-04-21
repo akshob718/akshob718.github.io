@@ -1,0 +1,19 @@
+.form-group {
+    width: 15%;
+    float: right;
+    margin-right: 2%;
+    background-color: black;
+}
+
+input {
+    background-color: black;
+    border: 0;
+    border-radius: 0%;
+    border-bottom: 1px solid white;
+}
+
+ng-template {
+    background-color: black;
+    width: 100%;
+    border: 2% black;
+}

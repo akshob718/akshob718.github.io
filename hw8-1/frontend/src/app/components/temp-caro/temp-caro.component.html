@@ -1,0 +1,55 @@
+<!-- <div *ngIf="resumeWatching.length > 0">
+    <div id="popMov">
+        <h3 [ngStyle]="{'font-size':'40px'}">Continue Watching</h3>
+    </div>
+    <ngb-carousel *ngIf="resumeWatching.length > 6; else simpleDiv " [interval]="0">
+        <ng-template ngbSlide *ngFor="let tcl of totalRW">
+            <div class="row row-cols-1 row-cols-md-6 g-4 popularMovies">
+                <div class="col" *ngFor="let txt of tcl">
+                    <a routerLink="/watch/{{txt['media']}}/{{txt['id']}}" rel="nofollow noopener noreferrer">
+                        <div class="card h-100">
+                            <img [src]="txt['picture']" class="card-img-top" />
+                            <div class="carousel-caption cText">
+                                <h5 class="ttCap">{{txt['name']}}</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+    <ng-template #simpleDiv>
+        <div class="row row-cols-1 row-cols-md-6 g-4 popularMovies">
+            <div class="col" *ngFor="let idx of resumeWatching; let i = index" [ngStyle]="{'margin-bottom':'2%'}">
+                <a routerLink="/watch/{{resumeWatching[i]['media']}}/{{resumeWatching[i]['id']}}" rel="nofollow noopener noreferrer">
+                    <div class="card h-100">
+                        <img [src]="resumeWatching[i]['picture']" class="card-img-top" />
+                        <div class="carousel-caption cText">
+                            <h5 class="ttCap">{{resumeWatching[i]['name']}}</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </ng-template>
+</div> -->
+
+<h1>Popular Movies</h1><br>
+<div class="container1">
+    <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide *ngFor="let x of images;">
+            <div class="row row-cols-1 row-cols-md-6">
+                <div class="col mb-4" *ngFor="let y of x;">
+                    <a routerLink="/watch/movie/{{y['id']}}" rel="nofollow noopener noreferrer">
+                        <div class="card">
+                            <img [src]="y['poster_path']" alt="Random first slide" class="picsum-img-wrapper">
+                            <div class="carousel-caption">
+                                <p>{{y['title']}}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>

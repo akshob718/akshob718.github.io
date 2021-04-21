@@ -1,0 +1,22 @@
+<div *ngIf="watchListData.length > 0;else other_content">
+    <div id="watchText">
+        <h3 [ngStyle]="{'font-size':'40px'}">My Watchlist</h3>
+    </div>
+    <div class="row row-cols-1 row-cols-md-6 g-4 recommendedMedia">
+        <div class="col" *ngFor="let idx of watchListData; let i = index" [ngStyle]="{'margin-top':'4%'}">
+            <a routerLink="" (click)="routePage(watchListData[i]['media'], watchListData[i]['id'])" rel="nofollow noopener noreferrer">
+                <div class="card h-100">
+                    <img [src]="watchListData[i]['picture']" class="card-img-top" />
+                    <div class="carousel-caption cText" [ngStyle]="{'display':'none'}">
+                        <h5 class="ttCap">{{watchListData[i]['titles']}}</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<ng-template #other_content>
+    <div id="noRes">
+        <h3 [ngStyle]="{'font-size':'40px', 'text-align':'center'}">{{mainText}}</h3>
+    </div>
+</ng-template>

@@ -1,0 +1,19 @@
+<h2>Trending TV Shows</h2>
+<div class="trending-tv-shows-container">
+    <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide *ngFor="let x of images;">
+            <div class="row row-cols-1 row-cols-md-6">
+                <div class="col mb-4" *ngFor="let y of x;">
+                    <a routerLink="/watch/tv/{{y['id']}}">
+                        <div class="card">
+                            <img [src]="y['poster_path']" alt="R" class="picsum-img-wrapper">
+                            <div class="carousel-caption">
+                                <p>{{y['title']}}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>

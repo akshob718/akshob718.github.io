@@ -1,0 +1,27 @@
+<div [ngStyle]="{'margin-left':'1%', 'margin-top':'1%'}">
+    <h1 id="castHeading">Reviews<span id="count">{{count}}</span></h1>
+</div>
+<div class="container" [ngStyle]="{'margin-top':'3%', 'margin-left':'10%'}" *ngIf="data">
+    <div class="card reviews" *ngFor="let i of data">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-4 reviewPic">
+                    <img class="profile-pic" [src]="i['avatar_path']" />
+                </div>
+                <div class="col-8 reviewText">
+                    <div class="topRev">
+                        <h3 class="rText">A review created by {{i['author']}}</h3>
+                    </div>
+                    <div class="round-rating">
+                        <span class="reviewRate">&#9733; &nbsp;{{i['rating']}}</span>
+                    </div>
+                    <div class="info">
+                        <h5 class="userInfo">Written by {{i['author']}} on {{i['created_at']}}</h5>
+                        <p class="ellipsis">{{i['content']}}</p>
+                        <a class="readText" href="{{i['url']}}" target="blank">Read the rest</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

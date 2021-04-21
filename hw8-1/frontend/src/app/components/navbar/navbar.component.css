@@ -1,0 +1,11 @@
+header {
+    background-color: black;
+    padding: 1%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 1%;
+    font-size: 20px;
+}
